@@ -1,0 +1,36 @@
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    Log.d("Lifecycle", "onCreate: Activity Created");
+}
+
+@Override
+protected void onStart() {
+    super.onStart();
+    Log.d("Lifecycle", "onStart: Activity Started and Visible");
+}
+
+@Override
+protected void onResume() {
+    super.onResume();
+    Log.d("Lifecycle", "onResume: Activity is Interactive");
+}
+
+@Override
+protected void onPause() {
+    super.onPause();
+    Log.d("Lifecycle", "onPause: Activity is Paused (partially hidden)");
+}
+
+@Override
+protected void onStop() {
+    super.onStop();
+    Log.d("Lifecycle", "onStop: Activity is No Longer Visible");
+}
+
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    Log.d("Lifecycle", "onDestroy: Activity Destroyed");
+}
